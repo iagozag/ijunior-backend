@@ -14,6 +14,3 @@ class Processos{
     }
 }
 
-class ListaProcessos{
-    adicionar
-}
