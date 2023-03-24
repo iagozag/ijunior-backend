@@ -3,7 +3,7 @@ function palindrome(str){
   return ans;
 }
 
-function two_greater_numbers(list){
+function two_biggest_numbers(list){
     list.sort();
     let n = list.length - 1;
     return [list[n-1], list[n]];
