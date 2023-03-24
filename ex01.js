@@ -5,11 +5,12 @@ function palindrome(str){
 
 function two_greater_numbers(list){
     list.sort();
-    let n = list.length;
+    let n = list.length - 1;
     return [list[n-1], list[n]];
 }
 
 function is_prime(x) {
+    if(x == 1) return false;
     for(let i = 2; i < x/2; i++)
         if(x % i == 0) return false;
     return true;
