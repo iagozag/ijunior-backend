@@ -1,16 +1,16 @@
 function palindrome(str){
-  var ans = (str == str.split("").reverse().join("")) ? "YES":"NO";
-  return ans;
+    let str1 = str.toLowerCase();
+    var ans = (str1 == str1.split("").reverse().join("")) ? "YES":"NO";
+    return ans;
 }
 
-function two_biggest_numbers(list){
+function two_greater_numbers(list){
     list.sort();
-    let n = list.length - 1;
+    let n = list.length;
     return [list[n-1], list[n]];
 }
 
 function is_prime(x) {
-    if(x == 1) return false;
     for(let i = 2; i < x/2; i++)
         if(x % i == 0) return false;
     return true;
@@ -30,3 +30,5 @@ function vowels(str){
     }
     return vowels;
 }
+
+console.log(palindrome("Aba"));
